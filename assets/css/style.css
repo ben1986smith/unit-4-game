@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	color: darkslategrey;
+	background-repeat: repeat;
+	background-image: url("../../assets/images/background.jpg");
+}
+
+h1 {
+	font-size: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: darkslategrey;
+}
+
+header {
+	text-align: center;
+	padding: 60px;
+}
+
+.instructions>p {
+	color: darkslategrey;
+	padding: 12px;
+}
+
+.panel-body {
+	text-align: justify;
+	padding: 0px 10px;
+}
+
+.gems {
+	margin: 10px 5px;
+	height:300px;
+	float: left;
+}
+
+ul {
+	background-repeat: repeat;
+}
+
+ul>li{
+	padding: 30px;
+}
+
+img.crystal {
+	width: 100px;
+	height: auto;
+}
+
+
+#goal, #score, #wins, #losses, #status {
+	color: darkslategrey;
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

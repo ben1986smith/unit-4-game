@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>The Crystals Collector Game</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<header>
+		<h1><strong>THE CRYSTALS COLLECTOR GAME</i></strong></h1>
+	</header>
+	<div class="row">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2><strong>Rules</strong></h2>
+			</div>
+			<div class="panel-body">
+					<p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+					You win the game by matching your total score to the randomly generated number. You lose if your total score goes above the random number.
+					The value of each crystal is hidden from you until you click on it. Each time the game restarts, a new target number and gem values will be assigned.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row gems">
+		<div class="col-sm-3"><img src="./assets/images/redgem.png" alt="red" id="red" class="crystal"></div>	
+		<div class="col-sm-3"><img src="./assets/images/yellowgem.png" alt="yellow" id="yellow" class="crystal"></div>
+		<div class="col-sm-3"><img src="./assets/images/bluegem.png" alt="blue" id="blue" class="crystal"></div>
+		<div class="col-sm-3"><img src="./assets/images/greengem.png" alt="green" id="green" class="crystal"></div>		
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row scoreboard">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h2><strong>Score</strong></h2>
+				</div>
+				<div class="panel-body">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Your Goal</th>
+								<th>Your Collection</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td id="goal">51</td>
+								<td id="score">0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row results">
+		<div class="col-sm-6">
+			<p id="status">Start collecting</p>
+		</div>
+		<div class="col-sm-6">
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<th>Wins</th>
+						<th>Losses</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="wins">0</td>
+						<td id="losses">0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+	 
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
